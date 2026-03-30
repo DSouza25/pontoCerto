@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# ⏱️ Ponto Certo
+
+Sistema de gerenciamento de ponto eletrônico desenvolvido para facilitar o controle de entrada, saída e jornada de trabalho de funcionários.
+
+O projeto tem como foco uma interface moderna, intuitiva e eficiente, proporcionando uma melhor experiência tanto para colaboradores quanto para gestores.
+
+---
+
+## 🚀 Funcionalidades
+
+* ✅ Registro de entrada e saída
+* 📊 Visualização de jornada de trabalho
+* 👥 Gestão de funcionários
+* ⚠️ Alertas de atraso
+* 🔐 Sistema de login
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+* React.js
+* JAVA
+
+
+>>>>>>> 324946d6926ee039e7061c1ee644c7f36867bd65
