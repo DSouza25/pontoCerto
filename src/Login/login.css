@@ -120,3 +120,37 @@
     background-color: rgb(5, 99, 153);
     color: whitesmoke;
 }
+
+@media (max-width: 769px) {
+    .bodyPage{
+        background-color: var(--color-secondary);
+    }
+    .containerForm{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .leftText{
+        display: none;
+    }
+}
+@media (max-width: 426px) {
+    .mainContainer{
+        width: 90%;
+    }
+    .containerForm > p:nth-child(2){
+        width: 90%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .containerForm > h2{
+        width: 90%;
+        font-size: 25px;
+        text-align: center;
+    }
+    .containerForm > form{
+        width: 80%;
+    }
+    .containerForm > button{
+        width: 80%;
+    }
+}
