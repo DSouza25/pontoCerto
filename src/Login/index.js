@@ -1,5 +1,5 @@
 import './login.css';
-import relogioPNG from '../assets/relogio.png';
+import alarmClock from '../assets/alarmClock.png';
 
 export default function Login(){
     return(
@@ -10,7 +10,7 @@ export default function Login(){
                     <main>
                         <h1>A precisão que  o seu <span>RH</span> merece.</h1>
                         <p>Gestão de ponto inteligente com transparência para a sua equipe.</p>
-                        <img src={relogioPNG} alt='imagem de um relogio'></img>
+                        <img src={alarmClock} alt='imagem de um relogio'></img>
                     </main>
                 </div>
                 <div className='containerForm'>
