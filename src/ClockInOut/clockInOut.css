@@ -1,16 +1,54 @@
 .pageContainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
-.checkContainer{
+.menuRegister{
+    height: 5%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    font-size: 18px;
+}
+.menuRegister > p{
+    width: 20%;
+    padding-left: 100px;
+}
+.menuRegister > nav{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.menuRegister > a{
+    width: 20%;
+    text-align: end;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.menuRegister > a:hover{
+    color: var(--color-error);
+    cursor: pointer;
+    font-weight: 500;
+}
+.menuRegister > nav > a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.menuRegister > nav > a:hover{
+    font-weight: 700;
+    text-decoration: dashed;
+}
+.active{
+    font-weight: 700;
+    text-decoration: dashed;
+}
+.checkContainer{
+    width: 100%;
+    height: 90%;
     background-color: red;
-    width: 30%;
-    height: 50%;
 }
