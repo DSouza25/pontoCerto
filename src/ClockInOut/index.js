@@ -15,17 +15,21 @@ export default function ClockInOut(){
             <header className='menuRegister'>
                 <p>Ponto Certo</p>
                 <nav>
-                    <a href='#check' className={ location.hash === "#check" ? "active": ""} end>Início</a>
+                    <a href='#check' className={ location.hash === "#check" || location.hash === "" ? "active": ""} end>Início</a>
                     <a href='#registers' className={ location.hash === "#registers" ? "active": ""} end>Histórico</a>
                 </nav>
                 <a>Sair</a>
             </header>
             <main className='mainBlock'>
                 <div id='check' className='checkContainer'>
-                    <div className='aBox'>Bloco A</div>
-                    <div className='bBox'>Bloco B</div>
-                    <div className='cBox'>Bloco C</div>
-                    <div className='dBox'>Bloco D</div>
+                    <div className='blocks'>
+                        <div className='leftBlocks'>
+                            <div className='aBox'>Bloco A</div>
+                            <div className='bBox'>Bloco B</div>
+                            <div className='cBox'>Bloco C</div>
+                        </div>
+                        <div className='dBox'>Bloco D</div>
+                    </div>
                 </div>
                 <div id='registers' className='registersContainer'>
 

@@ -17,6 +17,8 @@
 .menuRegister > p{
     width: 20%;
     padding-left: 100px;
+    color: var(--color-primary);
+    font-weight: 800;
 }
 .menuRegister > nav{
     width: 60%;
@@ -29,15 +31,17 @@
     text-align: end;
     padding-right: 50px;
     cursor: pointer;
+    color: var(--color-error);
 }
 .menuRegister > a:hover{
     color: var(--color-error);
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
 }
 .menuRegister > nav > a{
     cursor: pointer;
     text-decoration: none;
+    color: var(--color-primary);
 }
 .menuRegister > nav > a:hover{
     font-weight: 700;
@@ -46,6 +50,28 @@
 .active{
     font-weight: 700;
     text-decoration: dashed;
+    color: var(--color-primary);
+    position: relative;
+}
+.active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--color-primary);
+    left: 0;
+    bottom: -5px;
+    animation: showIn .3s normal;
+}
+@keyframes showIn {
+    0%{
+        width: 0%;
+        left: 50%;
+    }
+    100%{
+        width: 100%;
+        left: 0%;
+    }
 }
 .mainBlock{
     width: 100%;
@@ -58,9 +84,53 @@
     scrollbar-width: none;
 }
 .checkContainer{
-    background-color: blue;
     min-width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.blocks{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.leftBlocks{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.aBox{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bBox{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cBox{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dBox{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .registersContainer{
     min-width: 100%;
