@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './clockInOut.css';
 import fingerprint from '../assets/fingerprint.png';
-import clockIcon from '../assets/clockIcon.png';
+import clockIcon from '../assets/relogio_transparente.png';
+import iconeEntrada from '../assets/entrada.png'
 import { NavLink, useLocation } from 'react-router-dom';
 
 
@@ -39,7 +40,7 @@ export default function ClockInOut(){
                                 </select>
                             </div>
                             <div className='bBox'>
-                                <img src='' alt='logo de entrada'/>
+                                <img className='clockIcon' src={iconeEntrada} alt='logo de entrada'/>
                                 <div>
                                     <p>Ultima marcação</p>
                                     <h3>tipo da marcação: horário</h3>
