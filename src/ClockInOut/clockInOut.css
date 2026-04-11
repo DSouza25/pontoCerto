@@ -47,8 +47,23 @@
     font-weight: 700;
     text-decoration: dashed;
 }
-.checkContainer{
+.mainBlock{
     width: 100%;
     height: 90%;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;;
+    scrollbar-width: none;
+}
+.checkContainer{
+    background-color: blue;
+    min-width: 100%;
+    height: 100%;
+}
+.registersContainer{
+    min-width: 100%;
+    height: 100%;
+    background-color: brown;
 }
