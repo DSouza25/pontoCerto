@@ -1,4 +1,4 @@
-# 🚀 Ponto Certo
+# ⏰ Ponto Certo
 
 Sistema fullstack para gestão de ponto eletrônico com foco em transparência, controle e eficiência para equipes de RH.
 
