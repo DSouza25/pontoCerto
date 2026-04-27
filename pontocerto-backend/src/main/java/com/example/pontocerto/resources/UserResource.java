@@ -19,7 +19,7 @@ public class UserResource {
     }
 
     @PostMapping
-    public void pegarDados(@RequestBody User obj){
-        System.out.println(obj.getName());
+    public void saveNewUser(@RequestBody User user){
+        userService.saveNewUser(user);
     }
 }
