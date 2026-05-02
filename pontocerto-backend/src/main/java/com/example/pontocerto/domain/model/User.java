@@ -1,4 +1,4 @@
-package com.example.pontocerto.domain;
+package com.example.pontocerto.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,6 +13,7 @@ import jakarta.persistence.Table;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -28,12 +29,10 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String name;
+    @Column
+    private String accessCode;
 
     @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false)
-    private String email;
 }
