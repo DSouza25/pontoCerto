@@ -10,12 +10,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serial;
+import java.io.Serializable;
 import java.util.Date;
 
 @AllArgsConstructor
 @Getter
 @Setter
-public class Register {
+public class Register implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 

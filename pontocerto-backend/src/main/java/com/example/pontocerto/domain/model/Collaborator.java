@@ -10,12 +10,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serial;
+import java.io.Serializable;
 import java.util.Date;
 
 @AllArgsConstructor
 @Getter
 @Setter
-public class Collaborator{
+public class Collaborator implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
@@ -30,7 +31,7 @@ public class Collaborator{
     private Date dateOfBirth;
 
     @Column
-    private String adress;
+    private String address;
 
     @Column
     private String phoneNumber;
@@ -40,5 +41,8 @@ public class Collaborator{
 
     @Column(nullable = false)
     private CollaboratorPosition position;
+
+    @Column
+    private Store store;
 
 }
