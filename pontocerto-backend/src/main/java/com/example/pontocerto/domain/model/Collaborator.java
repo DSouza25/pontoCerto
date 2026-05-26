@@ -1,12 +1,10 @@
 package com.example.pontocerto.domain.model;
 
 import com.example.pontocerto.domain.enums.CollaboratorPosition;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serial;
@@ -14,8 +12,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
+@Entity
 public class Collaborator implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -25,24 +25,12 @@ public class Collaborator implements Serializable {
     private Long id;
 
     @Column(nullable = false)
-    private String fullName;
-
-    @Column
-    private Date dateOfBirth;
-
-    @Column
-    private String address;
-
-    @Column
-    private String phoneNumber;
+    private String name;
 
     @Column(nullable = false)
-    private User user;
+    private String position;
 
     @Column(nullable = false)
-    private CollaboratorPosition position;
-
-    @Column
-    private Store store;
+    private String store;
 
 }
